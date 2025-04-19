@@ -1,0 +1,358 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://knl4c218h11t"
+valid=false
+
+[deps]
+
+source_file="res://imported/Fairy_Tale_Castle_Grounds.fbx"
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"FTCG": {
+"use_external/enabled": true,
+"use_external/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/FTCG.tres"
+}
+},
+"meshes": {
+"Root Scene_FTCG_ door B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_ door B.res"
+},
+"Root Scene_FTCG_BrickWall A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_BrickWall A.res"
+},
+"Root Scene_FTCG_BrickWall B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_BrickWall B.res"
+},
+"Root Scene_FTCG_BrickWall C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_BrickWall C.res"
+},
+"Root Scene_FTCG_BrickWall D": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_BrickWall D.res"
+},
+"Root Scene_FTCG_Cloud A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Cloud A.res"
+},
+"Root Scene_FTCG_Cloud B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Cloud B.res"
+},
+"Root Scene_FTCG_Cloud C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Cloud C.res"
+},
+"Root Scene_FTCG_Flag": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Flag.res"
+},
+"Root Scene_FTCG_Flower A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Flower A.res"
+},
+"Root Scene_FTCG_Flower B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Flower B.res"
+},
+"Root Scene_FTCG_Flower C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Flower C.res"
+},
+"Root Scene_FTCG_House A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_House A.res"
+},
+"Root Scene_FTCG_Roof": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Roof.res"
+},
+"Root Scene_FTCG_Roof A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Roof A.res"
+},
+"Root Scene_FTCG_Stairs A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Stairs A.res"
+},
+"Root Scene_FTCG_Tower1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Tower1.res"
+},
+"Root Scene_FTCG_TowerRailing": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_TowerRailing.res"
+},
+"Root Scene_FTCG_Well": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Well.res"
+},
+"Root Scene_FTCG_Window A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Window A.res"
+},
+"Root Scene_FTCG_Window B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_Window B.res"
+},
+"Root Scene_FTCG_door A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_door A.res"
+},
+"Root Scene_FTCG_pebble A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_pebble A.res"
+},
+"Root Scene_FTCG_pebble B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_pebble B.res"
+},
+"Root Scene_FTCG_plane": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_plane.res"
+},
+"Root Scene_FTCG_towerpart A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_towerpart A.res"
+},
+"Root Scene_FTCG_towerpart B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_towerpart B.res"
+},
+"Root Scene_FTCG_towerpart C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_towerpart C.res"
+},
+"Root Scene_FTCG_towerpart D": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_towerpart D.res"
+},
+"Root Scene_FTCG_towerpart E": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_towerpart E.res"
+},
+"Root Scene_FTCG_tree A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree A.res"
+},
+"Root Scene_FTCG_tree B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree B.res"
+},
+"Root Scene_FTCG_tree C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree C.res"
+},
+"Root Scene_FTCG_tree D": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree D.res"
+},
+"Root Scene_FTCG_tree E": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree E.res"
+},
+"Root Scene_FTCG_tree F": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree F.res"
+},
+"Root Scene_FTCG_tree G": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_tree G.res"
+},
+"Root Scene_FTCG_wall A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_wall A.res"
+},
+"Root Scene_FTCG_wall B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Fairy_Tale_Castle_Grounds.fbm/Root Scene_FTCG_wall B.res"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

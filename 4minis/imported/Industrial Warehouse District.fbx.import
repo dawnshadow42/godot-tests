@@ -1,0 +1,414 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://xlg3e2ln52mh"
+valid=false
+
+[deps]
+
+source_file="res://imported/Industrial Warehouse District.fbx"
+
+[params]
+
+nodes/root_type="Node"
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"IndustrialWarehouseDistrict_Mat": {
+"use_external/enabled": true,
+"use_external/path": "res://sourcse/Materials/IndustrialWarehouseDistrict_Mat.tres"
+}
+},
+"meshes": {
+"Root Scene_Box_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_01.res"
+},
+"Root Scene_Box_14": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_14.res"
+},
+"Root Scene_Box_Small_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_Small_01.res"
+},
+"Root Scene_Box_Small_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_Small_02.res"
+},
+"Root Scene_Box_Small_Open_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_Small_Open_01.res"
+},
+"Root Scene_Box_Small_Open_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Box_Small_Open_02.res"
+},
+"Root Scene_Container_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Container_A_1.res"
+},
+"Root Scene_Container_B_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Container_B_1.res"
+},
+"Root Scene_Door_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Door_1.res"
+},
+"Root Scene_Fence_L_A_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Fence_L_A_01.res"
+},
+"Root Scene_Fence_Striaght_A_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Fence_Striaght_A_01.res"
+},
+"Root Scene_Fence_Striaght_B_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Fence_Striaght_B_01.res"
+},
+"Root Scene_Fence_Striaght_L_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Fence_Striaght_L_A_1.res"
+},
+"Root Scene_Ground_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Ground_1.res"
+},
+"Root Scene_Ground_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Ground_2.res"
+},
+"Root Scene_PedestrianLine_A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_PedestrianLine_A.res"
+},
+"Root Scene_PedestrianLine_B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_PedestrianLine_B.res"
+},
+"Root Scene_PedestrianLines_A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_PedestrianLines_A.res"
+},
+"Root Scene_PedestrianLines_B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_PedestrianLines_B.res"
+},
+"Root Scene_Platform_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Platform_1.res"
+},
+"Root Scene_RoadLine_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_RoadLine_A_1.res"
+},
+"Root Scene_RoadLine_B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_RoadLine_B.res"
+},
+"Root Scene_RoadLine_C_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_RoadLine_C_1.res"
+},
+"Root Scene_RoadLine_D": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_RoadLine_D.res"
+},
+"Root Scene_Road_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Road_A_1.res"
+},
+"Root Scene_Road_B_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Road_B_1.res"
+},
+"Root Scene_Road_C_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Road_C_1.res"
+},
+"Root Scene_Roof_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_A_1.res"
+},
+"Root Scene_Roof_B_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_B_1.res"
+},
+"Root Scene_Roof_C_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_C_1.res"
+},
+"Root Scene_Roof_D_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_D_1.res"
+},
+"Root Scene_Roof_Exhaustfan_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_Exhaustfan_1.res"
+},
+"Root Scene_Roof_Exhaustfan_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_Exhaustfan_2.res"
+},
+"Root Scene_Roof_Exhaustfan_3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Roof_Exhaustfan_3.res"
+},
+"Root Scene_Smoke_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Smoke_1.res"
+},
+"Root Scene_Smoke_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Smoke_2.res"
+},
+"Root Scene_Smoke_3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Smoke_3.res"
+},
+"Root Scene_Truck_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_A_1.res"
+},
+"Root Scene_Truck_A_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_A_2.res"
+},
+"Root Scene_Truck_B_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_B_1.res"
+},
+"Root Scene_Truck_B_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_B_2.res"
+},
+"Root Scene_Truck_C_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_C_1.res"
+},
+"Root Scene_Truck_D_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Truck_D_1.res"
+},
+"Root Scene_WallDoor_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_WallDoor_1.res"
+},
+"Root Scene_Wall_A_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Wall_A_1.res"
+},
+"Root Scene_Wall_B_1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_Wall_B_1.res"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

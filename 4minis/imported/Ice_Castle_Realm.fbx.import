@@ -1,0 +1,590 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c7vbfvbttcol6"
+valid=false
+
+[deps]
+
+source_file="res://imported/Ice_Castle_Realm.fbx"
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"phong1": {
+"use_external/enabled": true,
+"use_external/path": "res://sourcse/Ice_Castle_Realm.fbm/phong1.tres"
+}
+},
+"meshes": {
+"Root Scene_Bridge": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Bridge.res"
+},
+"Root Scene_Door1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Door1.res"
+},
+"Root Scene_Door2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Door2.res"
+},
+"Root Scene_Door3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Door3.res"
+},
+"Root Scene_Flag_Big": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Flag_Big.res"
+},
+"Root Scene_Flag_Small": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Flag_Small.res"
+},
+"Root Scene_Fourth_Floor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Fourth_Floor.res"
+},
+"Root Scene_House": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_House.res"
+},
+"Root Scene_Land1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Land1.res"
+},
+"Root Scene_Land2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Land2.res"
+},
+"Root Scene_PathWay1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_PathWay1.res"
+},
+"Root Scene_Pathway2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Pathway2.res"
+},
+"Root Scene_Rock": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock.res"
+},
+"Root Scene_Rock10": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock10.res"
+},
+"Root Scene_Rock11": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock11.res"
+},
+"Root Scene_Rock12": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock12.res"
+},
+"Root Scene_Rock13": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock13.res"
+},
+"Root Scene_Rock2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock2.res"
+},
+"Root Scene_Rock3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock3.res"
+},
+"Root Scene_Rock4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock4.res"
+},
+"Root Scene_Rock5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock5.res"
+},
+"Root Scene_Rock7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock7.res"
+},
+"Root Scene_Rock8": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock8.res"
+},
+"Root Scene_Rock9": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Rock9.res"
+},
+"Root Scene_RockMountain1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_RockMountain1.res"
+},
+"Root Scene_RockMountain2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_RockMountain2.res"
+},
+"Root Scene_RockMountain3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_RockMountain3.res"
+},
+"Root Scene_Second_floor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Second_floor.res"
+},
+"Root Scene_Second_floor_Veranda": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Second_floor_Veranda.res"
+},
+"Root Scene_Snow1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Snow1.res"
+},
+"Root Scene_Snow2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Snow2.res"
+},
+"Root Scene_Support": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Support.res"
+},
+"Root Scene_Third_Floor_Veranda": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Third_Floor_Veranda.res"
+},
+"Root Scene_Tower2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Tower2.res"
+},
+"Root Scene_Tree": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Tree.res"
+},
+"Root Scene_Tree4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Tree4.res"
+},
+"Root Scene_Tree5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Tree5.res"
+},
+"Root Scene_Water": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Water.res"
+},
+"Root Scene_Windows1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Windows1.res"
+},
+"Root Scene_Windows_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Windows_2.res"
+},
+"Root Scene_Windows_3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_Windows_3.res"
+},
+"Root Scene_bridge2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_bridge2.res"
+},
+"Root Scene_pCube116": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_pCube116.res"
+},
+"Root Scene_platform": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_platform.res"
+},
+"Root Scene_polySurface138": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface138.res"
+},
+"Root Scene_polySurface187": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface187.res"
+},
+"Root Scene_polySurface201": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface201.res"
+},
+"Root Scene_polySurface225": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface225.res"
+},
+"Root Scene_polySurface262": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface262.res"
+},
+"Root Scene_polySurface298": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface298.res"
+},
+"Root Scene_polySurface341": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface341.res"
+},
+"Root Scene_polySurface4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface4.res"
+},
+"Root Scene_polySurface49": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface49.res"
+},
+"Root Scene_polySurface56": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface56.res"
+},
+"Root Scene_polySurface7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface7.res"
+},
+"Root Scene_polySurface91": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface91.res"
+},
+"Root Scene_polySurface98": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_polySurface98.res"
+},
+"Root Scene_third_floor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_third_floor.res"
+},
+"Root Scene_tree": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree.res"
+},
+"Root Scene_tree10": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree10.res"
+},
+"Root Scene_tree11": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree11.res"
+},
+"Root Scene_tree3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree3.res"
+},
+"Root Scene_tree4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree4.res"
+},
+"Root Scene_tree5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree5.res"
+},
+"Root Scene_tree6": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree6.res"
+},
+"Root Scene_tree7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree7.res"
+},
+"Root Scene_tree8": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree8.res"
+},
+"Root Scene_tree9": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Ice_Castle_Realm.fbm/Root Scene_tree9.res"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

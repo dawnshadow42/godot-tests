@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmgd3rysqvd20"]
+
+[ext_resource type="Script" uid="uid://c4dt0jvfw1coa" path="res://balloon_popper/balloonmanager.gd" id="1_auasm"]
+[ext_resource type="PackedScene" uid="uid://if58w7epm376" path="res://balloon_popper/whole/balloon.tscn" id="2_tog5k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tog5k"]
+font_size = 48
+font_color = Color(0.333827, 0.538866, 0, 1)
+
+[node name="main" type="Node3D" node_paths=PackedStringArray("score_text")]
+script = ExtResource("1_auasm")
+score_text = NodePath("HUD/score_text")
+
+[node name="multiples" type="Node3D" parent="."]
+
+[node name="balloon" parent="multiples" instance=ExtResource("2_tog5k")]
+
+[node name="balloon2" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.965828, 1.74064, -1.88592)
+clicks_to_pop = 3
+
+[node name="balloon3" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07229, 0.0382519, -0.641066)
+clicks_to_pop = 8
+
+[node name="balloon4" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.96046e-08, 0.541234, -1.62951)
+clicks_to_pop = 3
+
+[node name="balloon5" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0163, 0.816687, 0)
+clicks_to_pop = 2
+
+[node name="balloon6" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48068, 1.34375, 0)
+clicks_to_pop = 4
+
+[node name="easy_environment" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="easy_environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.825743, 2.98619)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="easy_environment"]
+transform = Transform3D(1, 0, 0, 0, 0.213252, 0.976997, 0, -0.976997, 0.213252, 0.805427, 0.709177, 1.60795)
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="score_text" type="Label" parent="HUD"]
+layout_mode = 0
+offset_left = 970.0
+offset_top = 517.0
+offset_right = 1108.0
+offset_bottom = 607.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_tog5k")

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://d3um0uct5rg4c"]
+
+[ext_resource type="Texture2D" uid="uid://be1erh37iaq1w" path="res://imported/Fairy_Tale_Castle_Grounds-8ed6f36044b7318074a7f5de679c9e5f_WWT_Basecolor.png" id="1_2va0l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aye2y"]
+resource_local_to_scene = true
+
+[resource]
+resource_name = "FTCG"
+next_pass = SubResource("ShaderMaterial_aye2y")
+albedo_texture = ExtResource("1_2va0l")
+metallic = 0.4
+roughness = 0.272166
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}

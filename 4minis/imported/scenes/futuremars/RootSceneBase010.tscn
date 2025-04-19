@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5fqyronytj8g"]
+
+[ext_resource type="ArrayMesh" uid="uid://bfblp6nnqdl8a" path="res://sourcse/Future Mars Base.fbm/Root Scene_Base_010.res" id="1_3hk1o"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5mlye"]
+points = PackedVector3Array(-0.0219163, 0.000167446, 0.213759, -0.022237, 0.00104722, -0.236605, -0.0221582, 0.0455309, -0.216243, -0.0218319, 0.0474557, 0.235411, 0.0237733, 0.000176107, 0.213564, 0.0234518, 0.0010566, -0.2368, -0.022237, 0.00104722, -0.236605, -0.0219163, 0.000167446, 0.213759, 0.0235313, 0.0455403, -0.216437, 0.0237733, 0.000176107, 0.213564, 0.0238577, 0.0474651, 0.235209, 0.0234518, 0.0010566, -0.2368, -0.0221582, 0.0455309, -0.216243, 0.0238577, 0.0474651, 0.235209, -0.0218319, 0.0474557, 0.235411, 0.0235313, 0.0455403, -0.216437, -0.0218319, 0.0474557, 0.235411, 0.0238577, 0.0474651, 0.235209, 0.0237733, 0.000176107, 0.213564, -0.0219163, 0.000167446, 0.213759, -0.022237, 0.00104722, -0.236605, 0.0234518, 0.0010566, -0.2368, -0.0221582, 0.0455309, -0.216243, 0.0235313, 0.0455403, -0.216437)
+
+[node name="RootSceneBase010" type="MeshInstance3D"]
+mesh = ExtResource("1_3hk1o")
+
+[node name="RootSceneBase010_col" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootSceneBase010_col"]
+shape = SubResource("ConvexPolygonShape3D_5mlye")

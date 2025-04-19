@@ -1,0 +1,366 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dg1sxuh3bxjwt"
+valid=false
+
+[deps]
+
+source_file="res://imported/LP_Space_Mining_Colony.fbx"
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"Space_Mining_Colony_Mat": {
+"use_external/enabled": true,
+"use_external/path": "res://sourcse/Materials/Space_Mining_Colony_Mat.tres"
+}
+},
+"meshes": {
+"Root Scene_01_Floor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_01_Floor.res"
+},
+"Root Scene_02_Floating_Mineral": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_02_Floating_Mineral.res"
+},
+"Root Scene_03_Sort_Building": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_03_Sort_Building.res"
+},
+"Root Scene_04_Umbrella_Solar_Panel": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_04_Umbrella_Solar_Panel.res"
+},
+"Root Scene_05_Conveyor_Belt": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_05_Conveyor_Belt.res"
+},
+"Root Scene_06_Mined_Minerals_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_06_Mined_Minerals_02.res"
+},
+"Root Scene_07_Mined_Minerals_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_07_Mined_Minerals_01.res"
+},
+"Root Scene_08_Main_Building": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_08_Main_Building.res"
+},
+"Root Scene_09_Floating_Miner": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_09_Floating_Miner.res"
+},
+"Root Scene_10_Mined_Minerals_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_10_Mined_Minerals_03.res"
+},
+"Root Scene_11_Mineral_Outcrop_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_11_Mineral_Outcrop_01.res"
+},
+"Root Scene_12_Mineral_Outcrop_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_12_Mineral_Outcrop_02.res"
+},
+"Root Scene_13_Mineral_Outcrop_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_13_Mineral_Outcrop_03.res"
+},
+"Root Scene_14_Solarpanel_Array": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_14_Solarpanel_Array.res"
+},
+"Root Scene_15_Storage_Strailer": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_15_Storage_Strailer.res"
+},
+"Root Scene_16_Sattelite": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_16_Sattelite.res"
+},
+"Root Scene_17_Mini_house_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_17_Mini_house_01.res"
+},
+"Root Scene_18_Mini_House_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_18_Mini_House_02.res"
+},
+"Root Scene_19_Spaceship": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_19_Spaceship.res"
+},
+"Root Scene_20_Mining Truck": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_20_Mining Truck.res"
+},
+"Root Scene_21_Space_Debree_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_21_Space_Debree_01.res"
+},
+"Root Scene_22_Space_Debree_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_22_Space_Debree_02.res"
+},
+"Root Scene_23_Space_Debree_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_23_Space_Debree_03.res"
+},
+"Root Scene_24_Machine": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_24_Machine.res"
+},
+"Root Scene_25_Observatory": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_25_Observatory.res"
+},
+"Root Scene_26_Double_Vacuum_Door": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_26_Double_Vacuum_Door.res"
+},
+"Root Scene_27_Debree_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_27_Debree_01.res"
+},
+"Root Scene_28_Debree_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_28_Debree_02.res"
+},
+"Root Scene_29_Debree_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_29_Debree_03.res"
+},
+"Root Scene_30_Mini_Volcano": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_30_Mini_Volcano.res"
+},
+"Root Scene_31_Satellite_2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_31_Satellite_2.res"
+},
+"Root Scene_32_Mini_Antenna": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_32_Mini_Antenna.res"
+},
+"Root Scene_33_Battery": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_33_Battery.res"
+},
+"Root Scene_34_Smokes": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_34_Smokes.res"
+},
+"Root Scene_35_Relay_Antenna": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_35_Relay_Antenna.res"
+},
+"Root Scene_36_Hand_Drill": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_36_Hand_Drill.res"
+},
+"Root Scene_37_Bulb_Lights": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_37_Bulb_Lights.res"
+},
+"Root Scene_38_Ore_Detector": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_38_Ore_Detector.res"
+},
+"Root Scene_39_Bulb_Lights_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_39_Bulb_Lights_001.res"
+},
+"Root Scene_40_Roving Vehicle": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Meshes/Root Scene_40_Roving Vehicle.res"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

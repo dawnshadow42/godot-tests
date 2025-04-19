@@ -1,0 +1,558 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dnncjisk3kyk3"
+valid=false
+
+[deps]
+
+source_file="res://imported/Future Mars Base.fbx"
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"SBC_Basecolor": {
+"use_external/enabled": true,
+"use_external/path": "res://sourcse/Future Mars Base.fbm/SBC_Basecolor.tres"
+}
+},
+"meshes": {
+"Root Scene_Base_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_001.res"
+},
+"Root Scene_Base_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_002.res"
+},
+"Root Scene_Base_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_003.res"
+},
+"Root Scene_Base_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_004.res"
+},
+"Root Scene_Base_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_005.res"
+},
+"Root Scene_Base_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_006.res"
+},
+"Root Scene_Base_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_007.res"
+},
+"Root Scene_Base_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_008.res"
+},
+"Root Scene_Base_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_009.res"
+},
+"Root Scene_Base_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_010.res"
+},
+"Root Scene_Base_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_011.res"
+},
+"Root Scene_Base_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_012.res"
+},
+"Root Scene_Base_013": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_013.res"
+},
+"Root Scene_Base_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_014.res"
+},
+"Root Scene_Base_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_015.res"
+},
+"Root Scene_Base_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_016.res"
+},
+"Root Scene_Base_017": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_017.res"
+},
+"Root Scene_Base_Floor_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Base_Floor_001.res"
+},
+"Root Scene_Boxes_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Boxes_002.res"
+},
+"Root Scene_Car_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Car_001.res"
+},
+"Root Scene_Doors_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Doors_001.res"
+},
+"Root Scene_Doors_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Doors_002.res"
+},
+"Root Scene_Doors_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Doors_003.res"
+},
+"Root Scene_Floor_Lights_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Floor_Lights_002.res"
+},
+"Root Scene_Land_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Land_001.res"
+},
+"Root Scene_Lightpose_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Lightpose_002.res"
+},
+"Root Scene_Pipes_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_002.res"
+},
+"Root Scene_Pipes_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_003.res"
+},
+"Root Scene_Pipes_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_004.res"
+},
+"Root Scene_Pipes_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_005.res"
+},
+"Root Scene_Pipes_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_006.res"
+},
+"Root Scene_Pipes_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_007.res"
+},
+"Root Scene_Pipes_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_008.res"
+},
+"Root Scene_Pipes_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Pipes_009.res"
+},
+"Root Scene_Port_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Port_002.res"
+},
+"Root Scene_Power Supply_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Power Supply_001.res"
+},
+"Root Scene_Reserve tank_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Reserve tank_002.res"
+},
+"Root Scene_Rocks_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_002.res"
+},
+"Root Scene_Rocks_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_003.res"
+},
+"Root Scene_Rocks_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_004.res"
+},
+"Root Scene_Rocks_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_005.res"
+},
+"Root Scene_Rocks_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_006.res"
+},
+"Root Scene_Rocks_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_007.res"
+},
+"Root Scene_Rocks_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_008.res"
+},
+"Root Scene_Rocks_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_009.res"
+},
+"Root Scene_Rocks_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_010.res"
+},
+"Root Scene_Rocks_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_011.res"
+},
+"Root Scene_Rocks_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Rocks_012.res"
+},
+"Root Scene_Room_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Room_001.res"
+},
+"Root Scene_Room_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Room_002.res"
+},
+"Root Scene_Room_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Room_003.res"
+},
+"Root Scene_Room_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Room_004.res"
+},
+"Root Scene_Room_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Room_006.res"
+},
+"Root Scene_Satellite_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Satellite_001.res"
+},
+"Root Scene_Solar_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Solar_002.res"
+},
+"Root Scene_Switch_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Switch_002.res"
+},
+"Root Scene_Switch_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Switch_003.res"
+},
+"Root Scene_Tower_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Tower_001.res"
+},
+"Root Scene_Tower_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Tower_002.res"
+},
+"Root Scene_Truck_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Truck_001.res"
+},
+"Root Scene_Wires_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Wires_001.res"
+},
+"Root Scene_Wires_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Wires_002.res"
+},
+"Root Scene_Wires_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Wires_003.res"
+},
+"Root Scene_Wires_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://sourcse/Future Mars Base.fbm/Root Scene_Wires_004.res"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
