@@ -18,7 +18,7 @@ friction = 0.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_a6m7f"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7k2hd"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26cmp"]
 albedo_color = Color(0.0156863, 0.996078, 0.807843, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a6m7f"]
@@ -42,7 +42,7 @@ background_color = Color(0.313726, 0.694118, 0.831373, 1)
 [node name="Main" type="Node3D"]
 
 [node name="ground" type="StaticBody3D" parent="."]
-transform = Transform3D(12, 0, 0, 0, 0.281908, 10.2606, 0, -0.102606, 28.1908, 0, 0, 0)
+transform = Transform3D(12, 0, 0, 0, 0.281908, 34.202, 0, -0.102606, 93.9693, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
 mesh = SubResource("BoxMesh_fcyr1")
@@ -51,7 +51,7 @@ mesh = SubResource("BoxMesh_fcyr1")
 shape = SubResource("BoxShape3D_ln8g6")
 
 [node name="player" type="RigidBody3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6.38709, 12.6666)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.3749, 43.4041)
 physics_material_override = SubResource("PhysicsMaterial_ln8g6")
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -0.3, 0)
@@ -63,7 +63,7 @@ script = ExtResource("1_a6m7f")
 [node name="body" type="MeshInstance3D" parent="player"]
 transform = Transform3D(0.3, 0, 0, 0, 1.25, 0, 0, 0, 0.5, 0, -0.193886, 0)
 mesh = SubResource("BoxMesh_a6m7f")
-surface_material_override/0 = SubResource("StandardMaterial3D_7k2hd")
+surface_material_override/0 = SubResource("StandardMaterial3D_26cmp")
 
 [node name="ski1" type="MeshInstance3D" parent="player"]
 transform = Transform3D(0.25, 0, 0, 0, 0.2, 0, 0, 0, 2, 0.151248, -0.870584, 0)
@@ -107,33 +107,51 @@ environment = SubResource("Environment_a6m7f")
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.7147, -0.800632, -2.46949)
 
 [node name="RootSceneFtcgTreeB" parent="trees" groups=["tree"] instance=ExtResource("4_0jk6j")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.98852, 3.39355, 9.36123)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.98852, 8.37398, 23.4522)
 
 [node name="RootSceneFtcgTreeC" parent="trees" groups=["tree"] instance=ExtResource("5_wej77")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.21196, -2.76025, -7.58041)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.21196, 1.67355, 5.78173)
 
 [node name="RootSceneFtcgTreeD" parent="trees" groups=["tree"] instance=ExtResource("6_4hk7w")]
-transform = Transform3D(3, 0, 0, 0, 2.99962, 0.0475408, 0, -0.0475408, 2.99962, 1.88528, -2.28779, -6.26539)
+transform = Transform3D(3, 0, 0, 0, 2.99962, 0.0475408, 0, -0.0475408, 2.99962, 1.88528, -2.10558, -6.02244)
 
 [node name="RootSceneFtcgTreeE" parent="trees" groups=["tree"] instance=ExtResource("7_61w11")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.1142, 0, -0.11172)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.1142, 0.182212, 0.131227)
 
 [node name="RootSceneFtcgTreeF" parent="trees" groups=["tree"] instance=ExtResource("8_gj7rb")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.514409, 0.747604, 1.57981)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.00962, 0.686865, 2.04841)
+
+[node name="RootSceneFtcgTreeA3" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 3.68845, 7.39886, 17.4918)
+
+[node name="RootSceneFtcgTreeB3" parent="trees" groups=["tree"] instance=ExtResource("4_0jk6j")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 2.98852, 9.28504, 26.4891)
+
+[node name="RootSceneFtcgTreeC3" parent="trees" groups=["tree"] instance=ExtResource("5_wej77")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -3.21196, 3.0705, 9.36521)
+
+[node name="RootSceneFtcgTreeD3" parent="trees" groups=["tree"] instance=ExtResource("6_4hk7w")]
+transform = Transform3D(5, 0, 0, 0, 4.99937, 0.0792348, 0, -0.0792348, 4.99937, 1.88528, 4.15033, 12.3201)
+
+[node name="RootSceneFtcgTreeE2" parent="trees" groups=["tree"] instance=ExtResource("7_61w11")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -3.1142, 6.43812, 18.4738)
+
+[node name="RootSceneFtcgTreeF3" parent="trees" groups=["tree"] instance=ExtResource("8_gj7rb")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -4.12664, 11.0122, 29.4065)
 
 [node name="RootSceneFtcgTreeA2" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -4.43951, 1.08688, 2.76922)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -0.263261, -6.80893, -18.9648)
 
 [node name="RootSceneFtcgTreeB2" parent="trees" groups=["tree"] instance=ExtResource("4_0jk6j")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 4.42804, -1.45605, -4.16252)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 4.42804, -9.35186, -25.2383)
 
 [node name="RootSceneFtcgTreeC2" parent="trees" groups=["tree"] instance=ExtResource("5_wej77")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -2.25719, 3.94654, 10.3355)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -2.25719, -3.94927, -10.7402)
 
 [node name="RootSceneFtcgTreeD2" parent="trees" groups=["tree"] instance=ExtResource("6_4hk7w")]
-transform = Transform3D(-2.12132, -0.0336164, 2.12105, 0.0460913, 2.99818, 0.0936151, -2.12082, 0.0987831, -2.11952, -5.01225, 2.1375, 6.0055)
+transform = Transform3D(-2.12132, -0.0336164, 2.12105, 0.0460913, 2.99818, 0.0936151, -2.12082, 0.0987831, -2.11952, -5.01225, -5.75831, -15.0702)
 
 [node name="RootSceneFtcgTreeF2" parent="trees" groups=["tree"] instance=ExtResource("8_gj7rb")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 4.31942, -3.70055, -9.94216)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 4.31942, -11.5964, -31.0179)
 
 [connection signal="body_entered" from="player" to="player" method="_on_body_entered"]
