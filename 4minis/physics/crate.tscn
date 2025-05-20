@@ -5,8 +5,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pj0q"]
 size = Vector2(14, 14)
 
-[node name="Crate" type="RigidBody2D"]
+[node name="Crate" type="RigidBody2D" groups=["crate"]]
 gravity_scale = 0.0
+contact_monitor = true
 linear_damp = 5.0
 
 [node name="spriteCrate" type="Sprite2D" parent="."]
