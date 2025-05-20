@@ -19,7 +19,7 @@ func _on_body_entered(body):
 	if body.is_in_group("tree"):
 		tree_count += 1
 		print(tree_count)
-		if tree_count < 9:
+		if tree_count < 5:
 			$sbmin.play()
 		else:
 			$hsoops.play() 
