@@ -1,14 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://if58w7epm376"]
+[gd_scene load_steps=6 format=3 uid="uid://if58w7epm376"]
 
 [ext_resource type="Script" uid="uid://clau6wuyxvg6j" path="res://balloon_popper/balloon.gd" id="1_2o8f0"]
 [ext_resource type="Material" uid="uid://dpjc4fm3cfcg8" path="res://balloon_popper/balloon1.tres" id="2_kcc0f"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2o8f0"]
+friction = 0.0
+bounce = 1.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_wclo1"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_mdubk"]
 
-[node name="balloon" type="Area3D"]
+[node name="balloon" type="RigidBody3D"]
+physics_interpolation_mode = 1
+mass = 4.0
+physics_material_override = SubResource("PhysicsMaterial_2o8f0")
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 25
+linear_damp = 5.0
 script = ExtResource("1_2o8f0")
+size_increase = 0.5
 
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_wclo1")
@@ -17,4 +29,5 @@ surface_material_override/0 = ExtResource("2_kcc0f")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_mdubk")
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="input_event" from="." to="." method="_on_input_event"]

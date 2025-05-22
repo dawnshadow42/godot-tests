@@ -4,7 +4,7 @@ extends RigidBody3D
 var score_label
 
 func _ready():
-	score_label = get_parent().get_node("Label")
+	score_label = get_parent().get_node("/root/Main/Control/Label")
 	tree_count = 0
 
 func _physics_process(_delta):
