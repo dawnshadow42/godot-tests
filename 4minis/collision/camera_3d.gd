@@ -7,5 +7,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
-	position = get_parent().get_node("player").position + Vector3 + 2.0
+func _physics_process(_delta):
+	position.x = get_node("/root/Main/player").position.x
+	position.y = get_node("/root/Main/player").position.y + 3
+	position.z = get_node("/root/Main/player").position.z + 4

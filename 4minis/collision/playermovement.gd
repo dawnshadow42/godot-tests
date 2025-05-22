@@ -7,7 +7,7 @@ func _ready():
 	score_label = get_parent().get_node("Label")
 	tree_count = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_key_pressed(KEY_LEFT):
 		linear_velocity.x = -move_speed
 	if Input.is_key_pressed(KEY_RIGHT):
@@ -22,9 +22,12 @@ func _on_body_entered(body):
 		if tree_count < 5:
 			$sbmin.play()
 		else:
+			freeze = true
 			$hsoops.play() 
 	elif body.is_in_group("deathplane"):
+		freeze = true
 		$hsoops.play()
 
 func _on_hsoops_finished():
 	get_tree().reload_current_scene()
+	freeze = false
