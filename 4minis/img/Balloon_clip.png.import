@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dquh0xp0sr5dc"
-path="res://.godot/imported/digiportopen.png-6def54fda6cf1a0886827d00300b8f30.ctex"
+uid="uid://cfxhnrwobvfky"
+path="res://.godot/imported/Balloon_clip.png-d74577b9fbe60d43ec63bb1de288ed46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/digimon/digiportopen.png"
-dest_files=["res://.godot/imported/digiportopen.png-6def54fda6cf1a0886827d00300b8f30.ctex"]
+source_file="res://img/Balloon_clip.png"
+dest_files=["res://.godot/imported/Balloon_clip.png-d74577b9fbe60d43ec63bb1de288ed46.ctex"]
 
 [params]
 

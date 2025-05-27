@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cek160j46s7yd"]
+[gd_scene load_steps=12 format=3 uid="uid://cek160j46s7yd"]
 
 [ext_resource type="Texture2D" uid="uid://22uiuwvi45mw" path="res://img/digimon/digiportopen1.png" id="1_87egg"]
 [ext_resource type="Texture2D" uid="uid://0v60opv0xxa3" path="res://img/digimon/raster_2_16Gbot.png" id="2_fs0yk"]
+[ext_resource type="Texture2D" uid="uid://ouraf58mkt7l" path="res://img/digimon/raster_2_4Ifrme.png" id="2_q1xyx"]
+[ext_resource type="Texture2D" uid="uid://cfxhnrwobvfky" path="res://img/Balloon_clip.png" id="3_nxq8c"]
+[ext_resource type="Texture2D" uid="uid://dvwd7bbrpwwvs" path="res://img/Ski_clip.png" id="3_wttv0"]
+[ext_resource type="Texture2D" uid="uid://c3mlknfdvx0dt" path="res://orange_teal_gradient.tres" id="4_3u8qs"]
+[ext_resource type="FontFile" uid="uid://ctebd6bkcg7eo" path="res://fonts/Splatoon1.otf" id="4_wttv0"]
+[ext_resource type="FontFile" uid="uid://c1lv4aw47abkt" path="res://fonts/Splatoon2.otf" id="5_3f1c3"]
+[ext_resource type="Texture2D" uid="uid://ul74v51c1qhw" path="res://img/Physics_clip.png" id="5_3u8qs"]
+[ext_resource type="Texture2D" uid="uid://tdj6we3c3y84" path="res://white_teal_gradient.tres" id="5_86m3s"]
+[ext_resource type="Theme" uid="uid://b4fakygdmpmtx" path="res://MenuButtonTheme.tres" id="9_eebfg"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -29,52 +38,359 @@ texture = ExtResource("1_87egg")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="B_Desc" type="TextureRect" parent="Panel"]
+[node name="TextureRect" type="TextureRect" parent="Panel/TextureRect"]
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_q1xyx")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="SoundWarning" type="Label" parent="Panel/TextureRect"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37
+anchor_top = 0.06
+anchor_right = 0.9
+anchor_bottom = 0.11
+offset_left = 0.165466
+offset_top = 0.120003
+offset_right = -0.570435
+offset_bottom = 5.72
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -12
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 12
+text = "These use sound effects from HomeStarRunner.com
+You have been warned."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="imgonly" type="HBoxContainer" parent="Panel/TextureRect"]
+show_behind_parent = true
+z_index = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.085
+anchor_top = 0.145
+anchor_right = 0.915
+anchor_bottom = 0.825
+offset_left = -4.03696
+offset_top = -0.180008
+offset_right = 4.03693
+offset_bottom = 0.179993
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ScreenA" type="TextureRect" parent="Panel/TextureRect/imgonly"]
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_nxq8c")
+expand_mode = 5
+stretch_mode = 6
+
+[node name="ScreenB" type="TextureRect" parent="Panel/TextureRect/imgonly"]
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_wttv0")
+expand_mode = 5
+stretch_mode = 6
+
+[node name="ScreenC" type="TextureRect" parent="Panel/TextureRect/imgonly"]
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 0
+texture = ExtResource("5_3u8qs")
+expand_mode = 5
+stretch_mode = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TextureRect"]
+show_behind_parent = true
+z_index = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.085
+anchor_top = 0.145
+anchor_right = 0.915
+anchor_bottom = 0.825
+offset_left = -4.03696
+offset_top = -0.180023
+offset_right = 4.03693
+offset_bottom = 0.179993
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+alignment = 1
+
+[node name="ScreenA" type="TextureButton" parent="Panel/TextureRect/HBoxContainer"]
+z_index = 1
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+texture_normal = ExtResource("3_nxq8c")
+texture_pressed = ExtResource("4_3u8qs")
+texture_hover = ExtResource("5_86m3s")
+texture_focused = ExtResource("5_86m3s")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="ScreenB" type="TextureButton" parent="Panel/TextureRect/HBoxContainer"]
+z_index = 1
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+texture_normal = ExtResource("3_wttv0")
+texture_pressed = ExtResource("4_3u8qs")
+texture_hover = ExtResource("5_86m3s")
+texture_focused = ExtResource("5_86m3s")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="ScreenC" type="TextureButton" parent="Panel/TextureRect/HBoxContainer"]
+z_index = 1
+clip_contents = true
+custom_minimum_size = Vector2(216, 441)
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("5_3u8qs")
+texture_pressed = ExtResource("4_3u8qs")
+texture_hover = ExtResource("5_86m3s")
+texture_focused = ExtResource("5_86m3s")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="circlebuttons" type="HBoxContainer" parent="Panel/TextureRect"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.048
+anchor_top = 0.856
+anchor_right = 0.333
+anchor_bottom = 0.938
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Quit" type="Button" parent="Panel/TextureRect/circlebuttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("9_eebfg")
+text = "Quit"
+
+[node name="Unpause" type="Button" parent="Panel/TextureRect/circlebuttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("9_eebfg")
+text = "Pause"
+autowrap_mode = 2
+
+[node name="Credits" type="Button" parent="Panel/TextureRect/circlebuttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("9_eebfg")
+text = "Credits"
+
+[node name="circleimageonly" type="HBoxContainer" parent="Panel/TextureRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.059
+anchor_top = 0.856
+anchor_right = 0.318
+anchor_bottom = 0.938
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("9_eebfg")
+
+[node name="TextureButton2" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton3" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="A_Desc" type="TextureRect" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.22
 anchor_top = 0.06
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 texture = ExtResource("2_fs0yk")
 expand_mode = 3
 flip_h = true
 
-[node name="Panel" type="Panel" parent="Panel/B_Desc"]
+[node name="Panel" type="Panel" parent="Panel/A_Desc"]
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 1.0
+anchor_left = 0.6
+anchor_right = 0.984
 anchor_bottom = 1.0
 grow_horizontal = 0
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Panel/B_Desc/Panel"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/A_Desc/Panel"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -76.0
-offset_right = 76.0
-offset_bottom = 582.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-text = "Ski Game (Collision)"
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="Panel/B_Desc/Panel"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.22
-anchor_right = 0.96
-anchor_bottom = 1.0
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = -271.5
+offset_right = 162.5
+offset_bottom = 271.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "Control the the 3d model as he goes downhill. Use the arrow keys to navigate left and right through the obstacles. Glide off the ramp, or discover the bouncey trees. But whatever you do: don't try to find out how many times you can collide with an evergreen tree! 
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -24
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 48
+text = "Minigames!"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
 
-Youch!!!"
-horizontal_alignment = 2
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 24
+text = "1. Balloon Popper"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 18
+text = "Click the balloons to pop them. Each popped balloon will help reveal the Digimon hidden in the wall."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 24
+text = "2. Ski Game"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 18
+text = "Use the Left and Right arrow keys to control this nameless platypus. Definitely don't try to find out how many times you can collide with a tree before breaking."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 24
+text = "3. Box Spinner"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 18
+text = "Use your mouse to click around and see how long it takes to get all of the crates off the field."
+horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

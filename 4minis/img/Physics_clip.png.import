@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dquh0xp0sr5dc"
-path="res://.godot/imported/digiportopen.png-6def54fda6cf1a0886827d00300b8f30.ctex"
+uid="uid://ul74v51c1qhw"
+path="res://.godot/imported/Physics_clip.png-f8df8b11b2f72404a38b64fe7dc24818.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/digimon/digiportopen.png"
-dest_files=["res://.godot/imported/digiportopen.png-6def54fda6cf1a0886827d00300b8f30.ctex"]
+source_file="res://img/Physics_clip.png"
+dest_files=["res://.godot/imported/Physics_clip.png-f8df8b11b2f72404a38b64fe7dc24818.ctex"]
 
 [params]
 

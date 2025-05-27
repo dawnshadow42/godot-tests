@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://bmgd3rysqvd20"]
+[gd_scene load_steps=9 format=3 uid="uid://bmgd3rysqvd20"]
 
 [ext_resource type="Script" uid="uid://c4dt0jvfw1coa" path="res://balloon_popper/balloonmanager.gd" id="1_auasm"]
 [ext_resource type="PackedScene" uid="uid://if58w7epm376" path="res://balloon_popper/whole/balloon.tscn" id="2_tog5k"]
 [ext_resource type="Script" uid="uid://di8b0bna3qy3e" path="res://loops/loops3d.gd" id="3_auasm"]
+[ext_resource type="Texture2D" uid="uid://8bvhg4bnywjq" path="res://img/digimon/raster_2_9Dbkg_extracted.png" id="4_8ntsd"]
 [ext_resource type="FontFile" uid="uid://bn1eg3v3hobhh" path="res://fonts/Inkling_v2.otf" id="4_hbfhc"]
+[ext_resource type="Texture2D" uid="uid://xccpexo4f1le" path="res://img/digimon/raster_2_9Dbkg.jpg" id="5_pis1u"]
+[ext_resource type="Texture2D" uid="uid://b4gr17m2ldvud" path="res://img/digimon/raster_2_11Ebkg.jpg" id="6_8ntsd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tog5k"]
 size = Vector3(25, 25, 1)
@@ -15,8 +18,15 @@ script = ExtResource("1_auasm")
 
 [node name="balloon" parent="multiples" instance=ExtResource("2_tog5k")]
 
+[node name="balloon9" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.907465, -0.182024, -1.29018)
+
 [node name="balloon2" parent="multiples" instance=ExtResource("2_tog5k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.965828, 1.74064, -1.88592)
+clicks_to_pop = 3
+
+[node name="balloon8" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64156, -1.00687, -0.914269)
 clicks_to_pop = 3
 
 [node name="balloon3" parent="multiples" instance=ExtResource("2_tog5k")]
@@ -31,8 +41,16 @@ clicks_to_pop = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0163, 0.816687, 0)
 clicks_to_pop = 2
 
+[node name="balloon7" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.963169, -0.928959, -1.33952)
+clicks_to_pop = 2
+
 [node name="balloon6" parent="multiples" instance=ExtResource("2_tog5k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48068, 1.34375, 0)
+clicks_to_pop = 4
+
+[node name="balloon10" parent="multiples" instance=ExtResource("2_tog5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.273384, 1.54657, -0.992205)
 clicks_to_pop = 4
 
 [node name="easy_environment" type="Node3D" parent="."]
@@ -43,14 +61,44 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.825743, 3.81265)
 current = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="easy_environment"]
-transform = Transform3D(1, 0, 0, 0, 0.213252, 0.976997, 0, -0.976997, 0.213252, 0.805427, 0.709177, 1.60795)
+transform = Transform3D(0.940062, 0, 0.341003, -0.271874, 0.603611, 0.749491, -0.205833, -0.797278, 0.567432, 2.99952, 5.91518, 9.64586)
+light_indirect_energy = 3.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="easy_environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.99458)
+transform = Transform3D(0.305, 0, 0, 0, 0.305, 0, 0, 0, 0.305, 0, 0.826, -2.995)
 mesh = SubResource("BoxMesh_tog5k")
 
+[node name="Decal" type="Decal" parent="easy_environment/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+size = Vector3(25, 2, 25)
+texture_albedo = ExtResource("4_8ntsd")
+texture_emission = ExtResource("5_pis1u")
+emission_energy = 0.0
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="easy_environment"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -3.89486, -7.48385)
+mesh = SubResource("BoxMesh_tog5k")
+
+[node name="Decal" type="Decal" parent="easy_environment/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+size = Vector3(25, 2, 25)
+texture_albedo = ExtResource("6_8ntsd")
+emission_energy = 0.0
+
 [node name="SpotLight3D" type="SpotLight3D" parent="easy_environment"]
-transform = Transform3D(0.820483, -0.28759, -0.494064, 0.0843074, 0.915668, -0.392994, 0.56542, 0.280792, 0.775536, -4.83589, -2.64488, 3.74751)
+transform = Transform3D(0.775748, -0.296469, 0.557064, 0.352869, 0.93565, 0.00655822, -0.523161, 0.191483, 0.830443, 7.38915, 0.823856, 5.71651)
+light_color = Color(0.992157, 0.74902, 0.341176, 1)
+light_energy = 1.5
+light_indirect_energy = 2.0
+shadow_enabled = true
+spot_range = 12.7904
+spot_angle = 30.845
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="easy_environment"]
+transform = Transform3D(-0.97204, -0.0388199, -0.231583, 0.178793, -0.761694, -0.622781, -0.152219, -0.646774, 0.747337, -3.42472, -8.28103, 6.36035)
+light_color = Color(0.105882, 0.74902, 0.870588, 1)
+light_energy = 1.5
+light_indirect_energy = 2.0
 shadow_enabled = true
 spot_range = 12.7904
 spot_angle = 30.845
@@ -78,3 +126,7 @@ theme_override_fonts/font = ExtResource("4_hbfhc")
 theme_override_font_sizes/font_size = 64
 text = "Score: "
 horizontal_alignment = 2
+
+[connection signal="child_exiting_tree" from="multiples" to="." method="_on_multiples_child_exiting_tree"]
+[connection signal="tree_exiting" from="multiples/balloon" to="." method="_on_balloon_tree_exiting"]
+[connection signal="tree_exiting" from="multiples/balloon9" to="." method="_on_balloon_tree_exiting"]

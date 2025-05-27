@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://c2uv7cme184lv"]
+[gd_scene load_steps=9 format=4 uid="uid://c2uv7cme184lv"]
 
 [ext_resource type="Script" uid="uid://b21banpqqod65" path="res://physics/physicsplayer.gd" id="1_usrlm"]
 [ext_resource type="Texture2D" uid="uid://dxl26qxif764m" path="res://physics/PhysicsCharacter.png" id="2_lykrj"]
 [ext_resource type="AudioStream" uid="uid://rh27le8girs6" path="res://sounds/sb_startup_ding.wav" id="3_ep5qm"]
 [ext_resource type="PackedScene" uid="uid://28c24bxn3vrt" path="res://physics/crate.tscn" id="3_lykrj"]
+[ext_resource type="Texture2D" uid="uid://bcfi6xgrrmctr" path="res://img/digimon/raster_2_10Abkg.jpg" id="5_xwj03"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ep5qm"]
 size = Vector2(14, 14)
@@ -123,5 +124,27 @@ position = Vector2(-144, -81)
 points = PackedVector2Array(0, 0, 0, 162)
 width = 16.0
 default_color = Color(0.682353, 0.313726, 1, 1)
+
+[node name="Node2D" type="Control" parent="."]
+z_index = -1
+clip_contents = true
+custom_minimum_size = Vector2(288, 162)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Node2D"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_xwj03")
+expand_mode = 4
+stretch_mode = 4
 
 [connection signal="body_entered" from="player" to="player" method="_on_body_entered"]

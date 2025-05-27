@@ -27,7 +27,14 @@ func _on_body_entered(body):
 	elif body.is_in_group("deathplane"):
 		freeze = true
 		$hsoops.play()
+	elif body.is_in_group("winplane"):
+		freeze = true
+		$sbmax.play()
 
 func _on_hsoops_finished():
 	get_tree().reload_current_scene()
 	freeze = false
+
+
+# func _on_sbmax_finished():
+# menu pop up will go here
