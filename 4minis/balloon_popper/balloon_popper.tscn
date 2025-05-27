@@ -51,27 +51,30 @@ mesh = SubResource("BoxMesh_tog5k")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="easy_environment"]
 transform = Transform3D(0.820483, -0.28759, -0.494064, 0.0843074, 0.915668, -0.392994, 0.56542, 0.280792, 0.775536, -4.83589, -2.64488, 3.74751)
-light_color = Color(1, 0.317647, 0, 1)
 shadow_enabled = true
 spot_range = 12.7904
 spot_angle = 30.845
 
 [node name="HUD" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="score_text" type="Label" parent="HUD"]
-layout_mode = 0
-offset_left = 951.0
-offset_top = 20.0
-offset_right = 1132.0
-offset_bottom = 110.0
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -166.0
+offset_bottom = 87.0
+grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0.513726, 1)
 theme_override_fonts/font = ExtResource("4_hbfhc")
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 64
 text = "Score: "
 horizontal_alignment = 2

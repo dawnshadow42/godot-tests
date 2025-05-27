@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://dcntw4wr68cyx"]
+[gd_scene load_steps=28 format=4 uid="uid://dcntw4wr68cyx"]
 
 [ext_resource type="Script" uid="uid://ctisfuppxtctc" path="res://collision/playermovement.gd" id="1_a6m7f"]
 [ext_resource type="Texture2D" uid="uid://dar37wane2pr4" path="res://collision/PtP_face.jpg" id="1_ln8g6"]
@@ -10,9 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://ywywwafcey6e" path="res://imported/scenes/fairytale/RootSceneFtcgTreeE.tscn" id="7_61w11"]
 [ext_resource type="PackedScene" uid="uid://34prmahj5dy5" path="res://imported/scenes/fairytale/RootSceneFtcgTreeF.tscn" id="8_gj7rb"]
 [ext_resource type="PackedScene" uid="uid://t72toec18c48" path="res://imported/scenes/fairytale/RootSceneFtcgBrickWallD.tscn" id="9_0jk6j"]
-[ext_resource type="Script" uid="uid://bjic8t0ymuovj" path="res://collision/gui.gd" id="11_61w11"]
 [ext_resource type="Texture2D" uid="uid://d4mg8gg75vhoh" path="res://img/key_esc.png" id="12_gj7rb"]
 [ext_resource type="FontFile" uid="uid://bn1eg3v3hobhh" path="res://fonts/Inkling_v2.otf" id="13_gj7rb"]
+[ext_resource type="Script" uid="uid://bklnvnyknwiqo" path="res://collision/slide_menu.gd" id="13_qocoj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_fcyr1"]
 
@@ -56,6 +56,8 @@ background_mode = 1
 background_color = Color(0.313726, 0.694118, 0.831373, 1)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_26cmp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gj7rb"]
 
 [node name="Main" type="Node3D"]
 
@@ -170,16 +172,16 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -1.95763, -18.0829, -46.8801)
 transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -11.3535, -21.4972, -56.7813)
 
 [node name="RootSceneFtcgTreeF10" parent="trees" groups=["tree"] instance=ExtResource("8_gj7rb")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -15.4107, -46.2473, -130.393)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, -15.4107, -47.2531, -130.415)
 
 [node name="RootSceneFtcgTreeA11" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0.346886, -50.5107, -141.637)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0.346886, -52.1874, -141.637)
 
 [node name="RootSceneFtcgTreeE7" parent="trees" instance=ExtResource("7_61w11")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -6.45576, -50.5053, -140.655)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -6.45576, -52.182, -140.655)
 
 [node name="RootSceneFtcgTreeF11" parent="trees" groups=["tree"] instance=ExtResource("8_gj7rb")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -8.30964, -45.9312, -129.722)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -8.30964, -47.6079, -129.722)
 
 [node name="RootSceneFtcgTreeD15" parent="trees" groups=["tree"] instance=ExtResource("6_4hk7w")]
 transform = Transform3D(3, 0, 0, 0, 2.99962, 0.0475408, 0, -0.0475408, 2.99962, -21.6787, -23.6591, -63.6086)
@@ -194,26 +196,27 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -3.487, -37.4133, -99.8474)
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -11.3021, -32.8338, -87.9327)
 
 [node name="RootSceneFtcgTreeA12" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 17.8608, -47.5969, -133.388)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 17.8608, -48.6029, -133.388)
 
 [node name="RootSceneFtcgTreeE8" parent="trees" instance=ExtResource("7_61w11")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 10.1905, -46.6141, -130.787)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 10.1905, -47.6201, -130.787)
 
 [node name="RootSceneFtcgTreeA13" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 17.8346, -40.3636, -113.427)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 17.8346, -42.0403, -113.427)
 
 [node name="RootSceneFtcgTreeE9" parent="trees" instance=ExtResource("7_61w11")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 11.0319, -40.3582, -112.445)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 11.0319, -42.0349, -112.445)
 
 [node name="RootSceneFtcgTreeA14" parent="trees" groups=["tree"] instance=ExtResource("3_26cmp")]
-transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 13.8828, -53.6052, -149.883)
+transform = Transform3D(-2.12132, 0, 2.12132, 0.0460913, 2.99929, 0.0460913, -2.12082, 0.0651829, -2.12082, 13.8828, -54.611, -149.905)
 
 [node name="deathplane" type="StaticBody3D" parent="." groups=["deathplane"]]
 transform = Transform3D(7.555, 0, 0, 0, 7.555, 0, 0, 0, 25.67, 0, -116.396, -65)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="deathplane"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.98488, 0)
+transform = Transform3D(1, 0, 0, 0, 0.740922, 0.671591, 0, -0.671591, 0.740922, 0, 12.2521, 3.91237)
 shape = SubResource("WorldBoundaryShape3D_26cmp")
+debug_color = Color(0.984, 0, 0.348, 1)
 
 [node name="obs" type="Node3D" parent="."]
 
@@ -241,7 +244,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("11_61w11")
 
 [node name="Label" type="Label" parent="Control"]
 custom_minimum_size = Vector2(128, 64)
@@ -249,18 +251,25 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -128.0
+offset_left = -126.0
+offset_right = 2.0
 offset_bottom = 64.0
 grow_horizontal = 0
+theme_override_colors/font_color = Color(0.898039, 0.921569, 0.309804, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.592157, 0.313726, 1)
+theme_override_colors/font_outline_color = Color(1, 0.345098, 0.372549, 1)
+theme_override_fonts/font = ExtResource("13_gj7rb")
+theme_override_font_sizes/font_size = 64
 uppercase = true
 
-[node name="TextureButton" type="TextureButton" parent="Control"]
+[node name="EscKey" type="TextureButton" parent="Control"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 7.0
 offset_right = 104.0
 offset_bottom = 103.0
 scale = Vector2(0.5, 0.5)
+toggle_mode = true
 texture_normal = ExtResource("12_gj7rb")
 
 [node name="Slide_menu" type="Container" parent="Control"]
@@ -269,6 +278,7 @@ layout_mode = 0
 offset_left = 1200.0
 offset_right = 2224.0
 offset_bottom = 640.0
+script = ExtResource("13_qocoj")
 
 [node name="ColorRect" type="ColorRect" parent="Control/Slide_menu"]
 custom_minimum_size = Vector2(1024, 640)
@@ -295,15 +305,30 @@ offset_right = 1024.0
 offset_bottom = 640.0
 columns = 3
 
-[node name="Button" type="Button" parent="Control/Slide_menu/ColorRect/GridContainer"]
-layout_mode = 2
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, -8.74228e-08, -4.37114e-08, 1, -3.82137e-15, 1, 4.37114e-08, -0.53837, 56.8261, 62.9612)
 shadow_enabled = true
 directional_shadow_mode = 0
 directional_shadow_blend_splits = true
 
+[node name="winplane" type="StaticBody3D" parent="." groups=["winplane"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -84, -171.716)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="winplane" groups=["winplane"]]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, -5, -17.673)
+shape = SubResource("BoxShape3D_gj7rb")
+debug_color = Color(0.286766, 0.769688, 0, 1)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="winplane" groups=["winplane"]]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -50.0563, -5, -8.12668)
+shape = SubResource("BoxShape3D_gj7rb")
+debug_color = Color(0.286766, 0.769688, 0, 1)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="winplane" groups=["winplane"]]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 50.0966, -5, -8.12668)
+shape = SubResource("BoxShape3D_gj7rb")
+debug_color = Color(0.286766, 0.769688, 0, 1)
+
 [connection signal="body_entered" from="player" to="player" method="_on_body_entered"]
 [connection signal="finished" from="player/hsoops" to="player" method="_on_hsoops_finished"]
-[connection signal="toggled" from="Control/TextureButton" to="Control" method="_on_texture_button_toggled"]
+[connection signal="toggled" from="Control/EscKey" to="Control/Slide_menu" method="_on_esc_key_toggled"]

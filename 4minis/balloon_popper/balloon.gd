@@ -2,7 +2,7 @@ extends RigidBody3D
 @export var clicks_to_pop : int = 5
 @export var size_increase : float = 0.2
 @export var score_to_give : int = 1
-
+@export var color_pop : int = 0
 
 func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -11,7 +11,8 @@ func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, n
 		clicks_to_pop -= 1
 		if clicks_to_pop == 0:
 			get_node("/root/main").increase_score(score_to_give)
+			get_node("/root/main/easy_environment/SpotLight3D").light_color *= get_node("/root/main").score
 			queue_free()
 
-func _on_body_entered(get_colliding_bodies):
+func _on_body_entered():
 	add_constant_force(Vector3 (0,0,0))

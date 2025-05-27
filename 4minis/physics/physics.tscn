@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://c2uv7cme184lv"]
+[gd_scene load_steps=8 format=4 uid="uid://c2uv7cme184lv"]
 
 [ext_resource type="Script" uid="uid://b21banpqqod65" path="res://physics/physicsplayer.gd" id="1_usrlm"]
 [ext_resource type="Texture2D" uid="uid://dxl26qxif764m" path="res://physics/PhysicsCharacter.png" id="2_lykrj"]
@@ -13,6 +13,36 @@ data = PackedByteArray("cW9hZgAAcfIBAFYiFAAIGAAAAAAAAAAAAAAAAOAAQAAcOwAAmCCUQBYB
 format = 3
 loop_end = 25147
 mix_rate = 22050
+
+[sub_resource type="GDScript" id="GDScript_ep5qm"]
+script/source = "extends Node2D
+@onready var camsize_x1 : float = 20.0
+@onready var camsize_y2 : float = 20.0
+@onready var camsize_x2 : float
+@onready var camsize_y1 : float
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	DisplayServer.window_get_size()
+	camsize_x2 = get_viewport().get_visible_rect().size.x/2
+	camsize_y1 = get_viewport().get_visible_rect().size.y/2
+	prints(get_viewport().get_visible_rect().size.x,get_viewport().get_visible_rect().size.y,camsize_x2,camsize_y1)
+	
+	camsize_x1 -= camsize_x2
+	camsize_y2 -= camsize_y1
+	
+	prints(camsize_x1,camsize_y2)
+	
+	$northline.set_point_position(0, Vector2(camsize_x1,camsize_y1))
+	$northline.set_point_position(1, Vector2(camsize_x2,camsize_y1))
+	# $southline.set_point_position(0, Vector2(-camsize_x+2,-camsize_y+2))
+	# $southline.set_point_position(1, Vector2(camsize_x,-camsize_y+2))
+	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="Node2D" type="Node2D"]
 
@@ -65,5 +95,33 @@ position = Vector2(67, -59)
 
 [node name="Crate7" parent="Node" instance=ExtResource("3_lykrj")]
 position = Vector2(7, 40)
+
+[node name="boundlines" type="Node2D" parent="."]
+script = SubResource("GDScript_ep5qm")
+
+[node name="northline" type="Line2D" parent="boundlines"]
+position = Vector2(-144, -81)
+points = PackedVector2Array(0, 0, 288, 0)
+closed = true
+width = 16.0
+default_color = Color(0.415686, 0.964706, 0.811765, 1)
+
+[node name="southline" type="Line2D" parent="boundlines"]
+position = Vector2(-144, 81)
+points = PackedVector2Array(0, 0, 288, 0)
+width = 16.0
+default_color = Color(0.45098, 0.737255, 0.988235, 1)
+
+[node name="eastline" type="Line2D" parent="boundlines"]
+position = Vector2(144, -81)
+points = PackedVector2Array(0, 0, 0, 162)
+width = 16.0
+default_color = Color(1, 0.345098, 0.372549, 1)
+
+[node name="westline" type="Line2D" parent="boundlines"]
+position = Vector2(-144, -81)
+points = PackedVector2Array(0, 0, 0, 162)
+width = 16.0
+default_color = Color(0.682353, 0.313726, 1, 1)
 
 [connection signal="body_entered" from="player" to="player" method="_on_body_entered"]

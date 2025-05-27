@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://cek160j46s7yd"]
+
+[ext_resource type="Texture2D" uid="uid://22uiuwvi45mw" path="res://img/digimon/digiportopen1.png" id="1_87egg"]
+[ext_resource type="Texture2D" uid="uid://0v60opv0xxa3" path="res://img/digimon/raster_2_16Gbot.png" id="2_fs0yk"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+texture = ExtResource("1_87egg")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="B_Desc" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_top = 0.06
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("2_fs0yk")
+expand_mode = 3
+flip_h = true
+
+[node name="Panel" type="Panel" parent="Panel/B_Desc"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/B_Desc/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_right = 76.0
+offset_bottom = 582.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "Ski Game (Collision)"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/B_Desc/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_right = 0.96
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Control the the 3d model as he goes downhill. Use the arrow keys to navigate left and right through the obstacles. Glide off the ramp, or discover the bouncey trees. But whatever you do: don't try to find out how many times you can collide with an evergreen tree! 
+
+
+Youch!!!"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2

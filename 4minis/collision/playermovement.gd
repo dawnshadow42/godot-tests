@@ -13,7 +13,7 @@ func _physics_process(_delta):
 	if Input.is_key_pressed(KEY_RIGHT):
 		linear_velocity.x = move_speed
 # Update score and display
-	score_label.text = "Trees hit: " + str(tree_count)
+	score_label.text = "Trees hit: " + str(tree_count) + "  "
 
 func _on_body_entered(body):
 	if body.is_in_group("tree"):
