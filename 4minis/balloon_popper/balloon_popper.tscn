@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bmgd3rysqvd20"]
+[gd_scene load_steps=11 format=3 uid="uid://bmgd3rysqvd20"]
 
 [ext_resource type="Script" uid="uid://c4dt0jvfw1coa" path="res://balloon_popper/balloonmanager.gd" id="1_auasm"]
 [ext_resource type="PackedScene" uid="uid://if58w7epm376" path="res://balloon_popper/whole/balloon.tscn" id="2_tog5k"]
@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://bn1eg3v3hobhh" path="res://fonts/Inkling_v2.otf" id="4_hbfhc"]
 [ext_resource type="Texture2D" uid="uid://xccpexo4f1le" path="res://img/digimon/raster_2_9Dbkg.jpg" id="5_pis1u"]
 [ext_resource type="Texture2D" uid="uid://b4gr17m2ldvud" path="res://img/digimon/raster_2_11Ebkg.jpg" id="6_8ntsd"]
+[ext_resource type="PackedScene" uid="uid://cek160j46s7yd" path="res://mainmenu/mainmenu.tscn" id="7_6ppb5"]
+[ext_resource type="Theme" uid="uid://b4fakygdmpmtx" path="res://MenuButtonTheme.tres" id="8_pis1u"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tog5k"]
 size = Vector3(25, 25, 1)
@@ -103,30 +105,44 @@ shadow_enabled = true
 spot_range = 12.7904
 spot_angle = 30.845
 
+[node name="Menu" parent="." instance=ExtResource("7_6ppb5")]
+visible = false
+
 [node name="HUD" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 10
+anchors_preset = 15
 anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="score_text" type="Label" parent="HUD"]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -166.0
+offset_right = 166.0
 offset_bottom = 87.0
-grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0.513726, 1)
 theme_override_fonts/font = ExtResource("4_hbfhc")
 theme_override_font_sizes/font_size = 64
-text = "Score: "
+text = "  Trees Hit: "
 horizontal_alignment = 2
 
+[node name="Pause" type="Button" parent="HUD"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.102
+anchor_top = 0.86
+anchor_right = 0.149
+anchor_bottom = 0.944
+theme = ExtResource("8_pis1u")
+text = "Pause"
+
+[connection signal="ready" from="." to="Menu" method="_on_main_ready"]
 [connection signal="child_exiting_tree" from="multiples" to="." method="_on_multiples_child_exiting_tree"]
 [connection signal="tree_exiting" from="multiples/balloon" to="." method="_on_balloon_tree_exiting"]
 [connection signal="tree_exiting" from="multiples/balloon9" to="." method="_on_balloon_tree_exiting"]
+[connection signal="pressed" from="HUD/Pause" to="Menu" method="_on_pause_pressed"]

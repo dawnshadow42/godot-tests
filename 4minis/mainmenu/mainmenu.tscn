@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://cek160j46s7yd"]
+[gd_scene load_steps=18 format=3 uid="uid://cek160j46s7yd"]
 
 [ext_resource type="Texture2D" uid="uid://22uiuwvi45mw" path="res://img/digimon/digiportopen1.png" id="1_87egg"]
+[ext_resource type="Script" uid="uid://dralb4suuvk8i" path="res://mainmenu/mainmenu.gd" id="1_c1d8v"]
 [ext_resource type="Texture2D" uid="uid://0v60opv0xxa3" path="res://img/digimon/raster_2_16Gbot.png" id="2_fs0yk"]
 [ext_resource type="Texture2D" uid="uid://ouraf58mkt7l" path="res://img/digimon/raster_2_4Ifrme.png" id="2_q1xyx"]
 [ext_resource type="Texture2D" uid="uid://cfxhnrwobvfky" path="res://img/Balloon_clip.png" id="3_nxq8c"]
@@ -10,23 +11,58 @@
 [ext_resource type="FontFile" uid="uid://c1lv4aw47abkt" path="res://fonts/Splatoon2.otf" id="5_3f1c3"]
 [ext_resource type="Texture2D" uid="uid://ul74v51c1qhw" path="res://img/Physics_clip.png" id="5_3u8qs"]
 [ext_resource type="Texture2D" uid="uid://tdj6we3c3y84" path="res://white_teal_gradient.tres" id="5_86m3s"]
+[ext_resource type="Texture2D" uid="uid://1swhctjdoqrm" path="res://img/digimon/Black_Gear_New_Century.png" id="8_h1jkj"]
 [ext_resource type="Theme" uid="uid://b4fakygdmpmtx" path="res://MenuButtonTheme.tres" id="9_eebfg"]
+[ext_resource type="Texture2D" uid="uid://45c4aoun43gi" path="res://img/digimon/raster_2_16Gtop.jpg" id="12_ekw2e"]
 
-[node name="Main" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="Animation" id="Animation_h1jkj"]
+resource_name = "gear spin"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2.01, 3.04, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 3.14159, 6.28319, 6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_q5j66"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q5j66"]
+_data = {
+&"RESET": SubResource("Animation_q5j66"),
+&"gear spin": SubResource("Animation_h1jkj")
+}
+
+[node name="Menu" type="CanvasLayer"]
+process_mode = 2
+script = ExtResource("1_c1d8v")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="TextureRect" type="TextureRect" parent="Panel"]
 z_index = 1
@@ -34,18 +70,20 @@ layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("1_87egg")
 expand_mode = 3
 stretch_mode = 5
 
 [node name="TextureRect" type="TextureRect" parent="Panel/TextureRect"]
-z_index = 2
+z_index = 3
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_q1xyx")
 expand_mode = 5
 stretch_mode = 5
@@ -94,6 +132,7 @@ offset_right = 4.03693
 offset_bottom = 0.179993
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 alignment = 1
 
 [node name="ScreenA" type="TextureRect" parent="Panel/TextureRect/imgonly"]
@@ -124,6 +163,67 @@ texture = ExtResource("5_3u8qs")
 expand_mode = 5
 stretch_mode = 6
 
+[node name="Loading" type="ColorRect" parent="Panel/TextureRect"]
+visible = false
+show_behind_parent = true
+z_index = 3
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.085
+anchor_top = 0.145
+anchor_right = 0.915
+anchor_bottom = 0.825
+offset_left = -4.03696
+offset_top = -0.180023
+offset_right = 4.03693
+offset_bottom = 0.179993
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel/TextureRect/Loading"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+texture = ExtResource("8_h1jkj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/TextureRect/Loading/TextureRect"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_q5j66")
+}
+
+[node name="Label" type="Label" parent="Panel/TextureRect/Loading"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_right = 102.0
+offset_bottom = 97.0
+grow_horizontal = 2
+theme = ExtResource("9_eebfg")
+theme_override_colors/font_shadow_color = Color(0.356863, 0.329412, 0.556863, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Loading..."
+
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TextureRect"]
 show_behind_parent = true
 z_index = 1
@@ -141,6 +241,7 @@ offset_bottom = 0.179993
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
+mouse_filter = 2
 alignment = 1
 
 [node name="ScreenA" type="TextureButton" parent="Panel/TextureRect/HBoxContainer"]
@@ -194,6 +295,7 @@ anchor_right = 0.333
 anchor_bottom = 0.938
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Quit" type="Button" parent="Panel/TextureRect/circlebuttons"]
 layout_mode = 2
@@ -205,38 +307,17 @@ text = "Quit"
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("9_eebfg")
-text = "Pause"
-autowrap_mode = 2
+theme_override_constants/line_spacing = -18
+text = "Un-
+Pause
+"
 
 [node name="Credits" type="Button" parent="Panel/TextureRect/circlebuttons"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("9_eebfg")
+toggle_mode = true
 text = "Credits"
-
-[node name="circleimageonly" type="HBoxContainer" parent="Panel/TextureRect"]
-visible = false
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.059
-anchor_top = 0.856
-anchor_right = 0.318
-anchor_bottom = 0.938
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureButton" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("9_eebfg")
-
-[node name="TextureButton2" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="TextureButton3" type="TextureRect" parent="Panel/TextureRect/circleimageonly"]
-layout_mode = 2
-size_flags_horizontal = 3
 
 [node name="A_Desc" type="TextureRect" parent="Panel"]
 layout_mode = 1
@@ -245,6 +326,7 @@ anchor_left = 0.22
 anchor_top = 0.06
 anchor_right = 1.0
 anchor_bottom = 1.0
+rotation = -0.000976297
 mouse_filter = 2
 texture = ExtResource("2_fs0yk")
 expand_mode = 3
@@ -384,13 +466,173 @@ custom_minimum_size = Vector2(325, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
-theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme = ExtResource("9_eebfg")
 theme_override_constants/line_spacing = -10
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("5_3f1c3")
 theme_override_font_sizes/font_size = 18
 text = "Use your mouse to click around and see how long it takes to get all of the crates off the field."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="Credits" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_top = 0.06
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("12_ekw2e")
+expand_mode = 3
+flip_h = true
+
+[node name="Panel" type="Panel" parent="Panel/Credits"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_right = 0.984
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Credits/Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+localize_numeral_system = false
+alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/Credits/Panel/VBoxContainer"]
+clip_contents = false
+custom_minimum_size = Vector2(54, 64)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_colors/font_shadow_color = Color(0.933333, 0.180392, 0.305882, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -23
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 36
+text = "Thank you..."
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/Credits/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_colors/font_shadow_color = Color(0.933333, 0.180392, 0.305882, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -16
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 20
+text = "to the niblings!"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/Credits/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 18
+text = "...for play-testing this during Cousin Sleepover Mayhem! Apologies to my sibs for the oncoming storm of new vocal stims."
+horizontal_alignment = 1
+autowrap_mode = 2
+justification_flags = 35
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Panel/Credits/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_colors/font_shadow_color = Color(0.933333, 0.180392, 0.305882, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -16
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 20
+text = "and to viewers like you!"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/Credits/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 18
+text = "This was made in Godot 4.4.1, an open source game engine. I previously built the barebones from a tutorial. In the last week I added sounds, backgrounds, and lighting triggers, and connected the menus. Consider this a demonstration of what I can learn and accomplish successfully with very little time."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Panel/Credits/Panel/VBoxContainer"]
+clip_contents = false
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_colors/font_shadow_color = Color(0.933333, 0.180392, 0.305882, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -32
+theme_override_fonts/normal_font = ExtResource("4_wttv0")
+theme_override_font_sizes/normal_font_size = 18
+text = "Resources"
+scroll_active = false
+tab_size = 0
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/Credits/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.505882, 0.054902, 0.333333, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_3f1c3")
+theme_override_font_sizes/font_size = 14
+text = "Backgrounds: Digimon style guide via  WiththeWill.net
+Sound effects: HomeStarRunner.com
+Fonts: Splatoon 1-3 via northwestw.in/"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Panel/TextureRect/HBoxContainer/ScreenA" to="." method="_on_screen_a_pressed"]
+[connection signal="pressed" from="Panel/TextureRect/HBoxContainer/ScreenB" to="." method="_on_screen_b_pressed"]
+[connection signal="pressed" from="Panel/TextureRect/HBoxContainer/ScreenC" to="." method="_on_screen_c_pressed"]
+[connection signal="pressed" from="Panel/TextureRect/circlebuttons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/TextureRect/circlebuttons/Unpause" to="." method="_on_unpause_pressed"]
+[connection signal="toggled" from="Panel/TextureRect/circlebuttons/Credits" to="." method="_on_credits_toggled"]

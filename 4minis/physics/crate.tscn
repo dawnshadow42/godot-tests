@@ -11,7 +11,9 @@ contact_monitor = true
 linear_damp = 5.0
 
 [node name="spriteCrate" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
 texture = ExtResource("1_2yj3a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_1pj0q")

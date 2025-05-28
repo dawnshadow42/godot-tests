@@ -1,9 +1,241 @@
-[gd_scene load_steps=2 format=3 uid="uid://diy1cp6qfmpoh"]
+[gd_scene load_steps=7 format=3 uid="uid://diy1cp6qfmpoh"]
 
-[ext_resource type="Script" uid="uid://nmkpv6catku0" path="res://loops/loops.gd" id="1_qtakc"]
+[ext_resource type="Texture2D" uid="uid://22uiuwvi45mw" path="res://img/digimon/digiportopen1.png" id="2_i00d8"]
+[ext_resource type="Theme" uid="uid://b4fakygdmpmtx" path="res://MenuButtonTheme.tres" id="3_klqve"]
+[ext_resource type="FontFile" uid="uid://c1lv4aw47abkt" path="res://fonts/Splatoon2.otf" id="4_44a6s"]
+[ext_resource type="FontFile" uid="uid://ctebd6bkcg7eo" path="res://fonts/Splatoon1.otf" id="5_heidm"]
+[ext_resource type="Texture2D" uid="uid://0v60opv0xxa3" path="res://img/digimon/raster_2_16Gbot.png" id="6_5f2q5"]
+[ext_resource type="PackedScene" uid="uid://cek160j46s7yd" path="res://mainmenu/mainmenu.tscn" id="7_o85lp"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_qtakc")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+position = Vector2(576, 324)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureRect"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_right = 780.634
+offset_bottom = -2.0
+grow_vertical = 2
+texture = ExtResource("2_i00d8")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/TextureRect/TextureRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.138
+anchor_top = 0.21
+anchor_right = 0.857
+anchor_bottom = 0.775
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TextureRect/TextureRect2/MarginContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/TextureRect/TextureRect2/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(425, 1.94)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource("3_klqve")
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_44a6s")
+theme_override_font_sizes/font_size = 20
+text = "Welcome to the minigames!
+This is roughly based on the \"4 Minigames for Godot\" tutorial on Zenva.com
+HOWEVER, I spent the weekend showing them to my niblings who had some good ideas and now it's 9PM on a Tuesday night and I'm here adding the sauce to all this."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="StartButton" type="Button" parent="CanvasLayer/TextureRect/TextureRect2/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_klqve")
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_heidm")
+theme_override_font_sizes/font_size = 48
+text = "Click here to begin!"
+
+[node name="A_Desc" type="TextureRect" parent="CanvasLayer/TextureRect"]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_top = 0.06
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6_5f2q5")
+expand_mode = 3
+flip_h = true
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TextureRect/A_Desc"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_right = 0.984
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TextureRect/A_Desc/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = -271.5
+offset_right = 162.5
+offset_bottom = 271.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_separation = -24
+theme_override_fonts/normal_font = ExtResource("5_heidm")
+theme_override_font_sizes/normal_font_size = 48
+text = "Minigames!"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("5_heidm")
+theme_override_font_sizes/normal_font_size = 24
+text = "1. Balloon Popper"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_44a6s")
+theme_override_font_sizes/font_size = 18
+text = "Click the balloons to pop them. Each popped balloon will help reveal the Digimon hidden in the wall."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("5_heidm")
+theme_override_font_sizes/normal_font_size = 24
+text = "2. Ski Game"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_44a6s")
+theme_override_font_sizes/font_size = 18
+text = "Use the Left and Right arrow keys to control this nameless platypus. Definitely don't try to find out how many times you can collide with a tree before breaking."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.996078, 0.835294, 0.580392, 1)
+theme_override_colors/font_outline_color = Color(0.0862745, 0.117647, 0.411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.509804, 0.521569, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/normal_font = ExtResource("5_heidm")
+theme_override_font_sizes/normal_font_size = 24
+text = "3. Box Spinner"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/TextureRect/A_Desc/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource("3_klqve")
+theme_override_constants/line_spacing = -10
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_44a6s")
+theme_override_font_sizes/font_size = 18
+text = "Use your mouse to click around and see how long it takes to get all of the crates off the field."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Menu" parent="." instance=ExtResource("7_o85lp")]
+visible = false
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/TextureRect2/MarginContainer/VBoxContainer/StartButton" to="Menu" method="_on_start_button_pressed"]

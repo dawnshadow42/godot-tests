@@ -8,8 +8,8 @@ func _ready():
 	for i in spawn_count:
 		var star=star_scene.instantiate()
 		add_child(star)
-		star.position.x=randi_range(-280,280)
-		star.position.y=randi_range(-150,150)
+		star.position.x=randi_range(0,0)
+		star.position.y=randi_range(1200,800)
 		var star_size=randf_range(0.5,1.0)
 		star.scale.x=star_size
 		star.scale.y=star_size
