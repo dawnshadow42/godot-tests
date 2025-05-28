@@ -1,4 +1,4 @@
 Welcome,
 
-To run the minigame exe, you must have both the .exe and .pck file. Either the console.exe or the regular.exe will work.
+To run the minigame exe, you must have all three files: .exe, console.exe, and .pck.
 Have fun!
